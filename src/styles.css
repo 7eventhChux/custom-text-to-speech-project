@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/material.theme.css";
+html, body { 
+    background-image: url('./assets/ttsbckgd.jpg');
+    background-repeat: repeat;
+ }
+app-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 99;
+}
+app-sidebar{
+    position: fixed;
+    z-index: 100;
+}
+.main-head{margin-top: 6rem;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@import "~@ng-select/ng-select/themes/default.theme.css";
+* {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.page-link {
+    font-size: 13px;
+}
+.form-control{
+    border-color: #035c0f;
+}
+.ng-select .ng-clear-wrapper {
+    width: 8px;
+    margin-left: 3px;
+}
+.ng-select .ng-clear-wrapper .ng-clear {
+    margin-top: 5px;
+}
+
+

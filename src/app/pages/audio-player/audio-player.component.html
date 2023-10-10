@@ -1,0 +1,37 @@
+<div class="contain">
+    <app-header></app-header>
+    <app-sidebar></app-sidebar>
+    <div class="main" id="">
+        <div class="report-container" id="validate-contain">
+            <div class="" class="lang-wrap">
+                <label for="languageSelect">Select Language:</label>
+                <select id="languageSelect" [(ngModel)]="selectedLanguage" (change)="filterAudio()">
+                    <option value="Igbo">Igbo</option>
+                    <option value="Yoruba">Yoruba</option>
+                    <option value="Hausa">Hausa</option>
+                </select>
+            </div>
+
+            <div class="lang-wrap">
+                <h5>Type words to speech</h5>
+                <div class="d-flex justify-content-between">
+                    <div class="search-input-container">
+                        <input id="" (input)="filterAudio()" name="audioFilter" required [(ngModel)]="searchTerm"/>
+                        <span class="clear-icon" (click)="clearSearchTerm()" *ngIf="searchTerm"> &#x2716;</span>
+                    </div>
+                    <button class="speak-button" (click)="speakAudio()" *ngIf="filteredAudioFiles.length === 1"> Speak </button>
+                </div>
+            </div>
+            
+            <div class="audio-section">
+                <div  class="d-flex flex-column justify-content-center align-items-center">
+                    <i class="bi bi-volume-up-fill animate" [ngClass]="audioPlaying ? '': 'animate' "></i>
+                    <h5 *ngIf="audioPlaying">{{ matchedAudioFile }}</h5>
+                </div>
+                <div *ngIf="noSearchResult">
+                    <p>No Audio found for the searched keyword</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
