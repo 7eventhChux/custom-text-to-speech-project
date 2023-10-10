@@ -1,6 +1,6 @@
 .main{
     min-height: 100vh;
-    padding: 6rem 3rem 3rem 3rem;
+    padding: 6rem 2rem 3rem 3rem;
     margin-left: 215px;
     display: flex;
     flex-direction: column;
@@ -96,7 +96,7 @@ ng-select {
 }
 @media (max-width: 992px) {
     .main {
-        margin-left: 6rem;
+        margin-left: 4rem;
     }
 }
 @media (max-width: 800px) {
@@ -121,10 +121,16 @@ ng-select {
     }
     #validate-contain{
         width: 100%;
-        margin-top: 6rem;
+        margin-top: 3rem;
     }
     .feedback-pad{
-        padding: 2rem;
+        padding: 2rem 1rem;
         margin-top: 1rem;
+    }
+    .main-text h1{
+        font-size: 22px;
+    }
+    .main-text p{
+        font-size: 18px;
     }
 }

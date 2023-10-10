@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     bottom: 0;
-    width: 95px;
+    width: 83px;
 }
 .logo {
     padding-top: 15px;
@@ -31,7 +31,7 @@
 }
 .menu-link {
     display: block;
-    padding: 7px 25px;
+    padding: 7px 19px;
     text-decoration: none;
     color: white;
     transition: all 0.25s;
